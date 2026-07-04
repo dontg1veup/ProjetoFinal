@@ -52,18 +52,29 @@ footer {
 grid-row: 1 / 2;
 grid-column: 2 / -2;
 background-color: white;
-border-radius: 10px;
+border-radius: 3px;
 margin-top: 20px;
 
 }
 
+#bioarea img {
+    padding: 3px;
+}
+
+#bio {
+    max-width: 600px;
+    margin: auto;
+}
+
 #bio h2 {
 color: rgb(0, 130, 211);
-margin-bottom: 5px;
-padding: 8px;
+padding: 10px;
+font-size: 1.6em;
+
 }
 #bio p {
-    padding: 8px;
+    padding: 10px;
+    padding-top: 0px;
 }
 
 #sociais {
@@ -78,13 +89,39 @@ padding: 5px;
 #apresentacao {
 grid-row:2/3;
 grid-column: 2/-2;
+background-color: white;
+border-radius: 3px;
+margin-top: 20px;
+border: 1px solid red;
+
 }
+
+#apresentacao iframe {
+    display: block;
+    margin: auto ;
+    width: 100% !important;
+  aspect-ratio: 16 / 9; 
+  border: 0;
+  padding: 10px;
+  max-width: 600px;
+    
+}
+
+
+#apresentacao h2 {
+    padding: 10px;
+    font-size: 1.6em;
+    margin: auto;
+}
+
+
+
 
 
 .foto-perfil {
   /* 1. Define um tamanho quadrado perfeito */
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   
   /* 2. Corta os excessos da foto sem distorcer o rosto */
   object-fit: cover;
@@ -96,4 +133,10 @@ grid-column: 2/-2;
   border: 4px solid #1e88e5;
   display: block;
   margin: 20px auto 0px auto;
+}
+
+.testemarg {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
 }
