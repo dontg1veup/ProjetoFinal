@@ -12,18 +12,18 @@ a{
 
 header {
     background-color: blue;
-    padding: 10px 30px ;
+    padding: 10px;
     position: fixed;
     width: 100%;
    
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
  
 }
+
 body {
-    background-color: rgb(160, 160, 160);
+    background-color:#e2e2e2;
 }
 
 main {
@@ -41,12 +41,16 @@ footer {
     text-align: center;
 }
 
-
-
-#navbar{
-    display: flex;
-    gap: 15px;
+nav#menu a {
+    font-weight: 600;
+    padding: 12px 15px;
 }
+nav#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
 
 #bioarea{
 grid-row: 1 / 2;
