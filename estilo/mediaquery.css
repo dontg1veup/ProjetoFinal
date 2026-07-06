@@ -45,7 +45,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 90vw 1fr;
     gap: 20px;
-    margin-top: 20px;
+    
     
 
 }
@@ -155,4 +155,42 @@ border-radius: 8px;
 }
 
 
+#skillcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
 
+#skillcontainer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skillcontainer .nome { 
+    font-weight: bold;
+    color: var(--texto);
+}
+#skillcontainer .porcent {
+    color: var(--destaque);
+    font-weight: bold;
+}
+
+#skillcontainer .barra {
+    width: 100%;
+    height: 8px;
+    background-color: var(--mainfundo);
+    border-radius: 4px
+}
+
+#skillcontainer .progresso {
+    height: 100%;
+    background-color: var(--destaqueinverso);
+    border-radius: 4px;
+}
+
+@media screen and (min-width:768px) {
+    #skillcontainer { 
+        grid-template-columns: 1fr 1fr;
+    }
+}
