@@ -1,146 +1,65 @@
+
+
+
 * {
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height:1.5em;
+
 }
 
-a{
-    text-decoration: none;
-    color: rgb(255, 0, 0);
+
+
+:root {
+    --mainfundo: #f5f5f5;
+    --texto: #222222;
+    --textoinverso:#ffffff;
+    --destaque:#0077ff;
+    --destaqueinverso:#66bbff;
+    --fundocard:#ffffff;
+}
+
+
+body {
+    background-color: var(--mainfundo);
+    color: var(--texto);
 }
 
 header {
-    background-color: blue;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-   
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
- 
-}
-
-body {
-    background-color:#e2e2e2;
-}
-
-main {
-
-padding-top: 30px;
-display: grid;
-grid-template: auto auto auto / 15px 1fr 15px;
-
-
-
-}
-
-footer {
-    color: white;
-    text-align: center;
-}
-
-nav#menu a {
-    font-weight: 600;
-    padding: 12px 15px;
-}
-nav#menu ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-
-#bioarea{
-grid-row: 1 / 2;
-grid-column: 2 / -2;
-background-color: white;
-border-radius: 3px;
-margin-top: 20px;
-
-}
-
-#bioarea img {
-    padding: 3px;
-}
-
-#bio {
-    max-width: 600px;
-    margin: auto;
-}
-
-#bio h2 {
-color: rgb(0, 130, 211);
+color: var(--texto);
 padding: 10px;
-font-size: 1.6em;
+background-color: var(--destaque);
+
+
+display: flex;
+justify-content: flex-end;
+align-content: center;
+
 
 }
-#bio p {
-    padding: 10px;
-    padding-top: 0px;
-}
 
-#sociais {
+
+nav#menu ul {
     display: flex;
-    justify-content:center;
-
-}
-#sociais a {
-padding: 5px;
-}
-
-#apresentacao {
-grid-row:2/3;
-grid-column: 2/-2;
-background-color: white;
-border-radius: 3px;
-margin-top: 20px;
-border: 1px solid red;
-
-}
-
-#apresentacao iframe {
-    display: block;
-    margin: auto ;
-    width: 100% !important;
-  aspect-ratio: 16 / 9; 
-  border: 0;
-  padding: 10px;
-  max-width: 600px;
+    flex-flow: row nowrap;
+    gap: 10px;
+    
+    list-style: none;
     
 }
 
-
-#apresentacao h2 {
-    padding: 10px;
-    font-size: 1.6em;
-    margin: auto;
+nav#menu a {
+    text-decoration: none;
+    color: var(--textoinverso);
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 5px;
 }
 
-
-
-
-
-.foto-perfil {
-  /* 1. Define um tamanho quadrado perfeito */
-  width: 200px;
-  height: 200px;
-  
-  /* 2. Corta os excessos da foto sem distorcer o rosto */
-  object-fit: cover;
-  
-  /* 3. Transforma o quadrado em um círculo perfeito */
-  border-radius: 50%;
-  
-  /* 4. Cria a borda azul (espessura, estilo sólida, e a cor) */
-  border: 4px solid #1e88e5;
-  display: block;
-  margin: 20px auto 0px auto;
-}
-
-.testemarg {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
+nav#menu a:hover {
+    background-color: var(--destaqueinverso);
+    color: var(--destaque);
+    transition: background-color 0.5s , color 0.5s;
 }
