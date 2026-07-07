@@ -49,6 +49,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 90vw 1fr;
     gap: 20px;
+
+    margin-top: 10px;
     
     
 
@@ -101,7 +103,7 @@ section#ficha {
     padding: 20px;
     border-radius: 8px;
     grid-column: 2 ;
-    margin-top: 10px;
+    
 }
 
 section#ficha img.foto {
@@ -156,7 +158,7 @@ article{
 
 h2 {
     margin-bottom: 20px;
-    color: var(--destaque);
+    color: var(--destaque );
 }
 
 article#video .videocontainer{
@@ -308,6 +310,26 @@ article#projetos > h2 {
 
     #containerproject .texto {
         max-width: 50%;
+    }
+
+    main {
+        grid-template-columns: auto 300px 1fr auto;
+    }
+
+    section#ficha {
+        grid-column: 2/3;
+        position: sticky;
+        height: fit-content;
+        top:65px;
+        
+    }
+
+    section#detalhes {
+        grid-column: 3/4;
+    }
+
+    footer {
+        margin-top: 20px;
     }
 }
 
